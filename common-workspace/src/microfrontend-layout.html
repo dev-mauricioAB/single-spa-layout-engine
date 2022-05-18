@@ -1,0 +1,30 @@
+<single-spa-router>
+  <!--
+
+    This is the single-spa Layout Definition for your microfrontends.
+    See https://single-spa.js.org/docs/layout-definition/ for more information.
+
+  -->
+
+  <!-- Example layouts you might find helpful: -->
+
+  <nav>
+    <application name="@zitrus/z-header"></application>
+  </nav>
+  <!-- <route path="settings">
+    <application name="@org/settings"></application>
+  </route> -->
+
+
+  <main>
+    <!-- <route path="z-header">
+      <application name="@zitrus/z-header"></application>
+    </route> -->
+    <route path="z-body">
+      <application name="@zitrus/z-body"></application>
+    </route>
+    <route path="z-modulo-x">
+      <application name="@zitrus/z-modulo-x"></application>
+    </route>
+  </main>
+</single-spa-router>
